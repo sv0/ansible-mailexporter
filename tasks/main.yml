@@ -1,0 +1,4 @@
+---
+- name: Install prometheus-mailexporter
+  ansible.builtin.package:
+    name: prometheus-mailexporter
