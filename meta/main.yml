@@ -1,0 +1,29 @@
+galaxy_info:
+  author: slavik@svyrydiuk.eu
+  namespace: sv0
+  description: Ansible role to install Mailexporter
+  issue_tracker_url: https://github.com/sv0/ansible-mailexporter/issues
+  license: MIT
+
+  min_ansible_version: "2.11"
+
+  # https://galaxy.ansible.com/api/v1/platforms/
+  #
+  # platforms:
+  # - name: Fedora
+  #   versions:
+  #   - all
+  #   - 25
+  # - name: SomePlatform
+  #   versions:
+  #   - all
+  #   - 1.0
+  #   - 7
+  #   - 99.99
+
+  galaxy_tags:
+    - mail
+    - prometheus
+    - exporter
+
+dependencies: []
