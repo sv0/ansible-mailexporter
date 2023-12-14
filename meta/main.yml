@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: mailexporter
   author: slavik@svyrydiuk.eu
   namespace: sv0
   description: Ansible role to install Mailexporter
