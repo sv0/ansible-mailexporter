@@ -1,0 +1,11 @@
+[Unit]
+Description=MailExporter
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mailexporter -config.file /etc/mailexporter.conf
+RestartSec=5
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
