@@ -1,0 +1,6 @@
+---
+- name: Reload mailexporter
+  ansible.builtin.systemd:
+    name: mailexporter
+    state: restarted
+    enabled: true
