@@ -3,6 +3,13 @@
   ansible.builtin.package:
     name: prometheus-mailexporter
 
+- name: Create mailexporter.conf
+  template:
+    src: mailexporter.conf.j2
+    dest: /etc/mailexporter.conf
+    mode: 0640
+  notify:
+    - Reload mailexporter
 
 - name: Create mailexporter systemd service
   template:
