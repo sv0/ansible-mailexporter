@@ -2,3 +2,12 @@
 - name: Install prometheus-mailexporter
   ansible.builtin.package:
     name: prometheus-mailexporter
+
+
+- name: Create mailexporter systemd service
+  template:
+    src: systemd/mailexporter.service.j2
+    dest: /etc/systemd/system/mailexporter.service
+    mode: 0644
+  notify:
+    - Reload mailexporter
