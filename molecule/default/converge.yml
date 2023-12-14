@@ -2,6 +2,17 @@
 - name: Converge
   hosts: all
   gather_facts: false
+  vars:
+    mailexporter_servers:
+      - name: server1
+        server: smtp.server1.example
+        port: 587
+        login: us0r
+        passphrase: secret
+        from: us0r2@monitoring.example
+        to: monitoring@monitoring.example
+        detectiondir: /home/vmail/monitoring.example/monitoring/Maildir/new
+
   tasks:
     - name: "Include sv0.mailexporter"
       ansible.builtin.include_role:
