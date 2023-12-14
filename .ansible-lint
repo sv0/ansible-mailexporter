@@ -1,0 +1,13 @@
+---
+use_default_rules: true
+
+exclude_paths:
+  - ./.travis.yml
+  - ./.github
+
+parseable: true
+
+warn_list:
+  - 'fqcn-builtins'
+
+verbosity: 1
